@@ -1,0 +1,22 @@
+{
+	"name": "gitraw",
+	"version": "1.0.0",
+	"description": "A tool for converting Git repository URLs into direct raw file links.",
+	"main": "gitraw.js",
+	"scripts": {
+		"build": "esbuild gitraw.js --bundle --platform=node --format=esm --minify --outfile=dist/gitraw.js",
+		"start": "node gitraw.js"
+	},
+	"author": "Kerem ATA (zoda)",
+	"license": "MIT",
+	"dependencies": {
+		"commander": "^14.0.3"
+	},
+	"type": "module",
+	"bin": {
+		"gitraw": "./gitraw.js"
+	},
+	"devDependencies": {
+		"esbuild": "^0.28.2"
+	}
+}
